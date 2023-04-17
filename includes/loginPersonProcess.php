@@ -35,7 +35,7 @@ if(isset($_POST["login"])){
         $_SESSION['Lastname'] = $row['Lastname'];
         $_SESSION['PhoneNo'] = $row['PhoneNo'];
         $_SESSION['Email'] = $row['Email'];
-        header("Location: home.php");
+        header("Location: ../home.php");
 
         
     } else {

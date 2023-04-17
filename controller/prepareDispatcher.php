@@ -1,5 +1,5 @@
 <?php
-require "DB.php";
+    require "../DBconn/DB.php";
 extract($_POST);
 $sql = "SELECT * FROM Dispatcher WHERE Email = '$email'";
 $result = $conn->query($sql);

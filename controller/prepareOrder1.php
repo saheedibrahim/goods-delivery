@@ -8,11 +8,11 @@
     <title>Document</title>
 </head>
 <body>
-<?php
-    require "DB.php";
-    
+    <a href=></a>
+<?php   
+    require "../DBconn/DB.php";
         function goodsID(){
-            GLOBAL $conn;
+            require "../DBconn/DB.php";
             $goods_id = rand(900000, 999999);
             $stmt = "SELECT * FROM Orders WHERE GoodsID = $goods_id";
             $result = $conn->query($stmt);
@@ -83,7 +83,8 @@
                 $_SESSION["Size"] = $size;
                 $_SESSION["GoodsID"] = $goods_id;
                 echo "New record created successfully<br><br>";
-                header("Location: OrderAvailable.php");
+                // header("Location: ../OrderAvailable.php");
+                
 
             };
         }
@@ -92,6 +93,6 @@
 ?>
 
 
-    <button><a href="home.php">Home</a></button>
+    <button><a href="../home.php">Home</a></button>
 </body>
 </html>

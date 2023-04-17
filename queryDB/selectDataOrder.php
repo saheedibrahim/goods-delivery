@@ -8,10 +8,10 @@ class TableRows extends RecursiveIteratorIterator{
     function current(){
         return "<td style='width:150px; border:1px solid black'>" . parent::current() . "</td>";
     }
-    function beginChildren(){
+    function beginChildren():void{
         echo "<tr>";
     }
-    function endChildren(){
+    function endChildren():void{
         echo "</tr>" . "\n";
     }
 }

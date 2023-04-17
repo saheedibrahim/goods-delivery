@@ -103,6 +103,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST"){
 $stmt->close();
 $conn->close();
 ?>
-<a href="loginPerson.php">Login</a>
+<a href="../includes/loginPerson.php">Login</a>
 </body>
 </html>

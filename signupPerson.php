@@ -11,7 +11,7 @@
 </head>
 <body>
 
-    <form action="preparePerson1.php" method="post">
+    <form action="./controller/preparePerson1.php" method="post">
         Firstname: <input type="text" name="firstname" required><span class="error">* </span><br><br>
         Lastname: <input type="text" name="lastname" required><span class="error">* </span><br><br>
         Phone number: <input type="text" name="phone_no" id="" required><span class="error">*</span><br><br>
@@ -20,6 +20,6 @@
         Confirm Password: <input type="password" name="confirm_password" required><span class="error">* </span><br><br>
         <input type="submit" name="signup" value="Signup">
     </form>
-    <p>Already have an account? <a href="loginPerson.php">Login</a></p>
+    <p>Already have an account? <a href="./includes/loginPerson.php">Login</a></p>
 </body>
 </html>

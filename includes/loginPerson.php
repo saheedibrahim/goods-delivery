@@ -16,6 +16,6 @@
         Password: <input type="password" name="pass" required><span class="error">* </span><br><br>
         <input type="submit" name="login" value="Login">
     </form>
-    <p>Don't have an account? <a href="signupPerson.php">Register Here!</a></p>
+    <p>Don't have an account? <a href="../signupPerson.php">Register Here!</a></p>
 </body>
 </html>

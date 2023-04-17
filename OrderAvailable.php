@@ -68,7 +68,7 @@ $sql = "SELECT DipatcherID FROM Dispatcher";
     }
 for($x=0; $x<$dispatchersList; $x++){
     "<script>document.write(dispatcher_available())</script>";
-    header("Location: prepareDispatcher.php");
+    header("Location: ./controller/prepareDispatcher.php");
 }
 ?>
 </body>

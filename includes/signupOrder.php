@@ -23,7 +23,7 @@
         return $data;
     }
 ?>
-   <form action="prepareOrder1.php" method="post">
+   <form action="../controller/prepareOrder1.php" method="post">
      <select name="destination" id="" required>
             <option name="destination" value="select destination">select destination</option>
             <option name="destination" value="Lagos">Lagos</option>

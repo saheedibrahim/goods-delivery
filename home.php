@@ -8,18 +8,18 @@
     <title>Document</title>
 </head>
 <body><?php
-include("DB.php");
+// include("DB.php");
 $ID = $_SESSION["PersonID"];
-$sql = "SELECT * FROM Person WHERE PersonID = $ID";
-$result = $conn->query($sql);
-$row = $result->fetch_assoc();
+// $sql = "SELECT * FROM Person WHERE PersonID = $ID";
+// $result = $conn->query($sql);
+// $row = $result->fetch_assoc();
 ?>
     <p>You are welcome <?php echo $_SESSION['Firstname']. " " .$_SESSION['Lastname']; ?></p>
     <p>Your ID: <?php echo $_SESSION["PersonID"] ?></p>
-    <p>Order <a href="signupOrder.php">here!</a> for your dispatcher.</p>
+    <p>Order <a href="./includes/signupOrder.php">here!</a> for your dispatcher.</p>
     
     <!-- <script>
-        alert("<?php// echo $_SESSION["Firstname"] ?>");
+        alert("<//?php echo $_SESSION["Firstname"] ?>");
     </script> -->
 </body>
 </html>

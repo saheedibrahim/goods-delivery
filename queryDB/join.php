@@ -1,8 +1,6 @@
 <?php
 require "DB.php";
-$stmt = "SELECT Person.firstname AS Firstname, Person.Email AS Email, Orders.destination AS Destination, 
-Orders.GoodsID AS GoodsID, Orders.PersonID AS PersonID
-    FROM Orders 
+$stmt = "SELECT Person.firstname AS Firstname, Person.Email AS Email, Orders.destination AS DestinationOrders.GoodsID AS GoodsID, Orders.PersonID AS PersonID    FROM Orders 
     INNER JOIN Person ON Orders.PersonID = Person.PersonID";
 $result = $conn->query($stmt);
 if($row = $result->num_rows > 0){

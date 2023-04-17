@@ -10,7 +10,7 @@
     </style>
 </head>
 <body>
-    <form action="prepareDispatcher.php" method="post">
+    <form action="../controller/prepareDispatcher.php" method="post">
         <input type="text" name="name" placeholder="Name" require><span class="error">*</span><br><br>
         <input type="text" name="email" placeholder="Email" require><span class="error">*</span><br><br>
         <input type="number" name="phone_no" placeholder="Phone number" id="" require><span class="error">*</span><br><br>
